@@ -1,0 +1,105 @@
+
+/* Make mobil compatible form - add a breakpoint that shrinks
+red margins and switches to wrap and center for content of form */
+
+body {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#badge {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  top: 50px;
+}
+
+#title {
+  padding: 25px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  display: block;
+  font-family: 'Russo One', sans-serif;
+}
+
+.heading {
+  background-image: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 1));
+}
+
+.link {
+  margin-top: 85px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  position: relative;
+  bottom: 12px;
+  color: black;
+  border: 1px solid red;
+  padding: 2px 3px;
+  border-radius: 5px;
+}
+
+.link:hover {
+  color: white;
+  background-color: red;
+  text-decoration: none;
+}
+
+.outer-container {
+  background-color: red;
+  padding: 2% 5% 5% 5%;
+  margin-top: -8px;
+}
+
+.form-container {
+  background-color: white;
+  padding: 50px 50px;
+  border: 2px inset black;
+}
+
+.row {
+  display: flex;
+}
+
+.rightcolumn {
+  text-align: left;
+  padding-left: 10px;
+  flex: 50%;
+}
+
+.leftcolumn {
+  text-align: right;
+  padding-right: 10px;
+  flex: 50%;
+}
+
+.number {
+  width: 50px;
+}
+
+.button {
+  border-radius: 5px;
+}
+
+.button:hover {
+  color: white;
+  background-color: red;
+}
+
+.footer {
+  height: 80px;
+  background-color: yellow;
+  border-top: 1px solid black;
+}
+
+/* Media breakpoint - aligns flext container text to center on small screens */
+
+@media only screen and (max-width: 600px) {
+	.leftcolumn {
+      text-align: center;
+    }
+  .rightcolumn {
+      text-align: center;
+  }
+}
